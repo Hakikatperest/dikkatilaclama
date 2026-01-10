@@ -38,6 +38,7 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             line-height: 1.3;
+            text-align: center;
         }
         
         a {
@@ -59,6 +60,7 @@
         
         section {
             padding: 80px 0;
+            width: 100%;
         }
         
         .btn {
@@ -72,6 +74,7 @@
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-align: center;
         }
         
         .btn:hover {
@@ -92,6 +95,7 @@
             text-align: center;
             margin-bottom: 60px;
             padding: 0 15px;
+            width: 100%;
         }
         
         .section-title h2 {
@@ -271,7 +275,7 @@
             color: white;
             text-align: center;
             width: 100%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('images/dikkat1.webp');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -309,14 +313,16 @@
         
         .about-intro {
             text-align: center;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto 60px;
+            width: 100%;
         }
         
         .about-intro p {
             font-size: 18px;
             color: #555;
             margin-bottom: 20px;
+            text-align: center;
         }
         
         .company-story {
@@ -345,12 +351,14 @@
             font-size: 32px;
             margin-bottom: 20px;
             color: #d32f2f;
+            text-align: left;
         }
         
         .company-story-content p {
             margin-bottom: 20px;
             font-size: 16px;
             color: #555;
+            text-align: left;
         }
         
         /* MİSYON VİZYON */
@@ -411,6 +419,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 25px;
+            width: 100%;
         }
         
         .value-item {
@@ -438,63 +447,32 @@
             color: #333;
         }
         
-        /* EKİBİMİZ */
-        .team-section {
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 60px 40px;
-            margin-bottom: 60px;
+        /* SAYFA BANNERLARI */
+        .page-banners {
+            margin: 60px 0;
             width: 100%;
         }
         
-        .team-section h3 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #d32f2f;
-            font-size: 32px;
-        }
-        
-        .team-grid {
+        .banner-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            gap: 25px;
+            width: 100%;
         }
         
-        .team-member {
-            background-color: white;
+        .page-banner {
+            width: 100%;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 300px;
         }
         
-        .team-member:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .team-member-img {
-            height: 250px;
+        .page-banner img {
             width: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .team-member-content {
-            padding: 25px;
-            text-align: center;
-        }
-        
-        .team-member-content h4 {
-            color: #2e7d32;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-        
-        .team-member-content p {
-            color: #d32f2f;
-            font-weight: 500;
-            margin-bottom: 15px;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
         
         /* SERTİFİKA VE GARANTİ */
@@ -706,12 +684,22 @@
         }
         
         /* MOBİL UYUMLULUK */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 30px;
+            }
+        }
+        
         @media (max-width: 992px) {
             .company-story, .mission-vision, .certificates {
                 grid-template-columns: 1fr;
             }
             
-            .values-grid, .team-grid {
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .banner-container {
                 grid-template-columns: repeat(2, 1fr);
             }
             
@@ -725,6 +713,11 @@
             
             .header-phone-button {
                 display: none;
+            }
+            
+            .company-story-content h3,
+            .company-story-content p {
+                text-align: center;
             }
         }
         
@@ -798,8 +791,16 @@
                 font-size: 18px;
             }
             
-            .values-grid, .team-grid {
+            .values-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .banner-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-banner {
+                height: 250px;
             }
             
             .fixed-buttons {
@@ -821,10 +822,6 @@
                 padding: 30px 20px;
             }
             
-            .team-section {
-                padding: 40px 20px;
-            }
-            
             .emergency-contact {
                 padding: 40px 20px;
             }
@@ -835,6 +832,10 @@
         }
         
         @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -891,6 +892,18 @@
             font-weight: 600;
             font-size: 18px;
             width: 100%;
+        }
+        
+        /* Ortalama için ek stiller */
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .content-center {
+            text-align: center;
         }
     </style>
 </head>
@@ -951,7 +964,7 @@
     <!-- Sayfa Hero Bölümü -->
     <section class="page-hero">
         <div class="container">
-            <div class="page-hero-content">
+            <div class="page-hero-content content-center">
                 <h1>HAKKIMIZDA</h1>
                 <p>10 Yılı Aşkın Tecrübe ile Fethiye'nin Profesyonel İlaçlama Firması</p>
                 <a href="tel:05425485842" class="btn btn-red">
@@ -963,8 +976,8 @@
     
     <!-- Hakkımızda İçerik -->
     <section class="about-content-section">
-        <div class="container">
-            <div class="about-intro">
+        <div class="container centered-container">
+            <div class="about-intro content-center">
                 <h2 class="green-title">DİKKAT İLAÇLAMA Kimdir?</h2>
                 <p>2010 yılından bu yana Fethiye ve çevresinde profesyonel böcek ilaçlama, haşere kontrolü ve dezenfeksiyon hizmetleri sunan DİKKAT İLAÇLAMA, sektördeki tecrübesi ve uzman ekibiyle fark yaratmaktadır.</p>
                 <p>Müşteri memnuniyetini her zaman ön planda tutan firmamız, en modern ekipmanlar ve Sağlık Bakanlığı onaylı ilaçlarla, ev, iş yeri, otel, restoran ve tüm yaşam alanlarınızda haşere problemlerine kalıcı çözümler sunmaktadır.</p>
@@ -972,14 +985,28 @@
             
             <div class="company-story">
                 <div class="company-story-img">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DİKKAT İLAÇLAMA Ekibi">
+                    <img src="images/dikkat2.webp" alt="DİKKAT İLAÇLAMA Ekibi">
                 </div>
                 
-                <div class="company-story-content">
+                <div class="company-story-content content-center">
                     <h3>Yolculuğumuz</h3>
                     <p>DİKKAT İLAÇLAMA olarak, Fethiye'de küçük bir aile işletmesi olarak başladığımız yolculuğumuzda, bugün bölgenin en güvenilir ilaçlama firmalarından biri haline geldik. Bu başarıyı, müşterilerimize sunduğumuz kaliteli hizmet ve onların memnuniyetine borçluyuz.</p>
                     <p>İlk günden bu yana prensibimiz, insan sağlığını ve çevreyi koruyarak haşere kontrolü sağlamak olmuştur. Bu nedenle tüm uygulamalarımızda, en güvenli ve en etkili yöntemleri tercih ediyoruz.</p>
                     <p>Zaman içinde genişleyen hizmet yelpazemiz ve uzmanlaşan ekibimizle, Fethiye'de binlerce müşteriye hizmet verdik ve vermeye devam ediyoruz.</p>
+                </div>
+            </div>
+            
+            <div class="page-banners">
+                <div class="banner-container">
+                    <div class="page-banner">
+                        <img src="images/dikkat1.webp" alt="DİKKAT İLAÇLAMA Hizmet 1">
+                    </div>
+                    <div class="page-banner">
+                        <img src="images/dikkat2.webp" alt="DİKKAT İLAÇLAMA Hizmet 2">
+                    </div>
+                    <div class="page-banner">
+                        <img src="images/dikkat3.webp" alt="DİKKAT İLAÇLAMA Hizmet 3">
+                    </div>
                 </div>
             </div>
             
@@ -1025,38 +1052,6 @@
                         <i class="fas fa-users"></i>
                         <h4>Müşteri Memnuniyeti</h4>
                         <p>Müşterilerimizin memnuniyeti, işimizin temel ölçütüdür. Her hizmet sonrası memnuniyet anketi yaparak kendimizi sürekli geliştiriyoruz.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="team-section">
-                <h3>Uzman Ekibimiz</h3>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="team-member-img" style="background-image: url('https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
-                        <div class="team-member-content">
-                            <h4>Ahmet Yılmaz</h4>
-                            <p>Genel Müdür & Uzman Ziraat Mühendisi</p>
-                            <p>15 yıllık haşere kontrolü deneyimi ile firmamızın teknik lideridir.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="team-member">
-                        <div class="team-member-img" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
-                        <div class="team-member-content">
-                            <h4>Mehmet Kaya</h4>
-                            <p>İlaçlama Uzmanı & Saha Sorumlusu</p>
-                            <p>10 yıllık saha tecrübesi ile en zorlu haşere problemlerine çözüm üretir.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="team-member">
-                        <div class="team-member-img" style="background-image: url('https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
-                        <div class="team-member-content">
-                            <h4>Ayşe Demir</h4>
-                            <p>Müşteri İlişkileri & Teknik Destek</p>
-                            <p>Müşterilerimizin her türlü soru ve ihtiyacına profesyonel çözümler sunar.</p>
-                        </div>
                     </div>
                 </div>
             </div>
