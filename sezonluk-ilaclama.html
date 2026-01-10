@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sezonluk İlaçlama | DİKKAT İLAÇLAMA - Fethiye Böcek İlaçlama</title>
+    <meta name="description" content="Sezonluk ilaçlama hizmeti ile haşerelerden sürekli korunun. Düzenli bakım programları, otel ve site ilaçlama paketleri. Fethiye'de profesyonel çözümler.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* TEMEL STİLLER */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #1b5e20;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-red {
+            background-color: #d32f2f;
+        }
+        
+        .btn-red:hover {
+            background-color: #b71c1c;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #222;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .red-title {
+            color: #d32f2f !important;
+        }
+        
+        .green-title {
+            color: #2e7d32 !important;
+        }
+        
+        /* HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+            width: 100%;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #d32f2f;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .logo-text span {
+            color: #2e7d32;
+        }
+        
+        .header-phone-button {
+            display: flex;
+            align-items: center;
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 15px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-left: 20px;
+        }
+        
+        .header-phone-button:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+        
+        .header-phone-button i {
+            margin-right: 8px;
+        }
+        
+        .main-nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            gap: 25px;
+            margin: 0 auto;
+        }
+        
+        .main-nav a {
+            font-weight: 500;
+            font-size: 16px;
+            color: #333;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .main-nav a:hover, .main-nav a.active {
+            color: #2e7d32;
+        }
+        
+        .main-nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .main-nav a:hover:after, .main-nav a.active:after {
+            width: 100%;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            border-top: 3px solid #2e7d32;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            padding-left: 25px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            order: 2;
+        }
+        
+        /* SEZONLUK İLAÇLAMA HERO BÖLÜMÜ */
+        .page-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 500px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .page-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            letter-spacing: 1px;
+        }
+        
+        .page-hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* İÇERİK BÖLÜMÜ */
+        .content-section {
+            padding: 80px 0;
+            width: 100%;
+        }
+        
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .content-img {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .content-text h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+        
+        .content-text p {
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #555;
+        }
+        
+        .content-list {
+            margin: 25px 0;
+        }
+        
+        .content-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .content-list i {
+            color: #2e7d32;
+            margin-right: 10px;
+            margin-top: 5px;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        /* AVANTAJLAR BÖLÜMÜ */
+        .advantages-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            width: 100%;
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+        }
+        
+        .advantage-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .advantage-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .advantage-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #2e7d32;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 36px;
+        }
+        
+        .advantage-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        /* PAKETLER BÖLÜMÜ */
+        .packages-section {
+            padding: 80px 0;
+            width: 100%;
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            width: 100%;
+        }
+        
+        .package-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .package-card.popular {
+            border-color: #2e7d32;
+            position: relative;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            background-color: #d32f2f;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .package-header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 25px 20px;
+        }
+        
+        .package-header h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .package-price {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .package-price span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        .package-body {
+            padding: 30px 20px;
+        }
+        
+        .package-features {
+            margin-bottom: 30px;
+        }
+        
+        .package-features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .package-features i {
+            color: #2e7d32;
+            margin-right: 10px;
+        }
+        
+        /* ÇAĞRI BÖLÜMÜ */
+        .call-section {
+            background: linear-gradient(to right, #2e7d32, #1b5e20);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .call-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .call-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .call-content p {
+            font-size: 18px;
+            margin-bottom: 35px;
+            opacity: 0.9;
+        }
+        
+        .call-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        /* FAQ BÖLÜMÜ */
+        .faq-section {
+            background-color: #fff;
+            padding: 80px 0;
+            width: 100%;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            width: 100%;
+        }
+        
+        .faq-question {
+            background-color: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question.active {
+            background-color: #2e7d32;
+            color: white;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: #ddd;
+            padding-top: 80px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+        
+        .footer-logo h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo h3 span {
+            color: #2e7d32;
+        }
+        
+        .footer-logo p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .footer-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a:hover {
+            color: #2e7d32;
+            padding-left: 5px;
+        }
+        
+        .contact-info-footer li {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .contact-info-footer i {
+            color: #2e7d32;
+            margin-right: 15px;
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #2e7d32;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 0;
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+        }
+        
+        /* SABİT BUTONLAR */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .call-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background-color: #2e7d32;
+        }
+        
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background-color: #25D366;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .emergency-banner {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+        }
+        
+        /* MOBİL UYUMLULUK */
+        @media (max-width: 1200px) {
+            .packages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .content-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .header-phone-button {
+                display: none;
+            }
+            
+            .page-hero h1 {
+                font-size: 38px;
+            }
+            
+            .page-hero p {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                padding: 80px 30px 30px;
+                transition: right 0.4s ease;
+                z-index: 1001;
+                overflow-y: auto;
+                justify-content: flex-start;
+            }
+            
+            .main-nav.active {
+                right: 0;
+            }
+            
+            .main-nav ul {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            
+            .main-nav li {
+                border-bottom: 1px solid #f1f1f1;
+                width: 100%;
+            }
+            
+            .main-nav a {
+                display: block;
+                padding: 15px 0;
+                width: 100%;
+            }
+            
+            .dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border-top: none;
+                padding-left: 20px;
+                display: none;
+                width: 100%;
+            }
+            
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .packages-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .page-hero {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .page-hero h1 {
+                font-size: 32px;
+            }
+            
+            .page-hero p {
+                font-size: 16px;
+            }
+            
+            .fixed-buttons {
+                bottom: 70px;
+                right: 20px;
+            }
+            
+            .call-btn, .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+            
+            .content-text h2 {
+                font-size: 28px;
+            }
+            
+            .call-content h2 {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .page-hero h1 {
+                font-size: 28px;
+            }
+            
+            .call-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .call-buttons .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .fixed-buttons {
+                bottom: 60px;
+                right: 15px;
+            }
+        }
+        
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Acil Durum Bannerı -->
+    <div class="emergency-banner">
+        <i class="fas fa-exclamation-triangle"></i> ACİL İLAÇLAMA HİZMETİ: 7/24 HİZMETİNİZDEYİZ! <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <!-- Logo Alanı -->
+                <div class="logo-container">
+                    <div class="logo-text">
+                        DİKKAT <span>İLAÇLAMA</span>
+                    </div>
+                </div>
+                
+                <!-- Menü barında telefon butonu -->
+                <a href="tel:05425485842" class="header-phone-button">
+                    <i class="fas fa-phone"></i> Hemen Ara
+                </a>
+                
+                <!-- Mobil Menü Butonu -->
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <!-- Ana Navigasyon -->
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li class="dropdown" id="servicesDropdown">
+                            <a href="ilaclama-turleri.html">İlaçlama Türleri <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="yuruyen-hasereler.html">Yürüyen Haşereler</a>
+                                <a href="ucan-hasereler.html">Uçan Haşereler</a>
+                                <a href="tahta-kurusu.html">Tahta Kurusu</a>
+                                <a href="orumcek-ilaclama.html">Örümcek İlaçlama</a>
+                                <a href="fare-ilaclama.html">Fare İlaçlama</a>
+                                <a href="sezonluk-ilaclama.html" class="active">Sezonluk İlaçlama</a>
+                            </div>
+                        </li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobil Menü Overlay -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </header>
+    
+    <!-- Sayfa Hero Bölümü -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Sezonluk İlaçlama Hizmeti</h1>
+            <p>Düzenli bakım ve koruma programları ile haşerelerden sürekli korunun. Otel, site, restaurant ve işyerleriniz için özel sezonluk ilaçlama paketleri.</p>
+            <a href="tel:05425485842" class="btn btn-red" style="font-size: 18px; padding: 15px 35px;">
+                <i class="fas fa-phone"></i> Hemen Arayın: 0542 548 58 42
+            </a>
+        </div>
+    </section>
+    
+    <!-- İçerik Bölümü 1 -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-img">
+                    <img src="https://images.unsplash.com/photo-1584713503697-8dd5f7d6c611?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sezonluk İlaçlama Hizmeti">
+                </div>
+                <div class="content-text">
+                    <h2 class="green-title">Neden Sezonluk İlaçlama?</h2>
+                    <p>Sezonluk ilaçlama, haşere probleminin tekrar etmesini önlemek için düzenli aralıklarla yapılan profesyonel bir koruma programıdır. Mevsimsel değişiklikler ve haşerelerin yaşam döngüleri dikkate alınarak planlanır.</p>
+                    <p>Özellikle otel, restaurant, site gibi toplu yaşam alanlarında ve haşere riski yüksek bölgelerde sezonluk ilaçlama hizmeti almak, sürekli temiz ve sağlıklı bir ortam sağlar.</p>
+                    
+                    <ul class="content-list">
+                        <li><i class="fas fa-check"></i> Mevsimsel haşere artışlarına karşı koruma</li>
+                        <li><i class="fas fa-check"></i> Daha ekonomik ve planlı çözüm</li>
+                        <li><i class="fas fa-check"></i> Sürekli kontrol ve takip imkanı</li>
+                        <li><i class="fas fa-check"></i> Ani haşere istilalarına karşı önlem</li>
+                        <li><i class="fas fa-check"></i> İşletmeler için kesintisiz hizmet garantisi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Avantajlar Bölümü -->
+    <section class="advantages-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="red-title">Sezonluk İlaçlamanın Avantajları</h2>
+                <p style="max-width: 700px; margin: 20px auto 0;">Düzenli ilaçlama programı ile elde edeceğiniz birçok avantaj</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Planlı Hizmet</h3>
+                    <p>Yıl boyunca önceden planlanmış ilaçlama programı ile anlık müdahalelere gerek kalmaz.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Ekonomik Çözüm</h3>
+                    <p>Tek seferlik ilaçlamalara göre çok daha ekonomik paket fiyatlar sunuyoruz.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sürekli Koruma</h3>
+                    <p>Yılın her mevsimi ve haşerenin her türlü yaşam evresine karşı koruma sağlanır.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Detaylı Raporlama</h3>
+                    <p>Her ilaçlama sonrası detaylı raporlama ile durumunuzu takip edebilirsiniz.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <h3>İş Sürekliliği</h3>
+                    <p>Otel ve restaurant gibi işletmelerde hizmet kesintisi yaşanmaz.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>7/24 Destek</h3>
+                    <p>Sezonluk paket müşterilerimize özel 7/24 acil destek hattı.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paketler Bölümü -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="green-title">Sezonluk İlaçlama Paketlerimiz</h2>
+                <p style="max-width: 700px; margin: 20px auto 0;">İhtiyacınıza uygun sezonluk ilaçlama paketlerimiz</p>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Paket 1 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Standart Paket</h3>
+                        <div class="package-price">₺1.500<span>/yıl</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Yılda 3 kez ilaçlama</li>
+                            <li><i class="fas fa-check"></i> Genel haşere kontrolü</li>
+                            <li><i class="fas fa-check"></i> 150 m²'ye kadar alan</li>
+                            <li><i class="fas fa-check"></i> Temel raporlama</li>
+                            <li><i class="fas fa-check"></i> 6 ay garanti</li>
+                        </ul>
+                        <a href="tel:05425485842" class="btn" style="width: 100%;">Paketi Seç</a>
+                    </div>
+                </div>
+                
+                <!-- Paket 2 -->
+                <div class="package-card popular">
+                    <div class="popular-badge">EN POPÜLER</div>
+                    <div class="package-header">
+                        <h3>Premium Paket</h3>
+                        <div class="package-price">₺2.500<span>/yıl</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Yılda 4 kez ilaçlama</li>
+                            <li><i class="fas fa-check"></i> Tüm haşere türleri</li>
+                            <li><i class="fas fa-check"></i> 300 m²'ye kadar alan</li>
+                            <li><i class="fas fa-check"></i> Detaylı raporlama</li>
+                            <li><i class="fas fa-check"></i> 12 ay garanti</li>
+                            <li><i class="fas fa-check"></i> Acil destek hattı</li>
+                        </ul>
+                        <a href="tel:05425485842" class="btn" style="width: 100%; background-color: #d32f2f;">Paketi Seç</a>
+                    </div>
+                </div>
+                
+                <!-- Paket 3 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>İşletme Paketi</h3>
+                        <div class="package-price">₺3.500<span>/yıl</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Yılda 6 kez ilaçlama</li>
+                            <li><i class="fas fa-check"></i> Restoran/Otel için</li>
+                            <li><i class="fas fa-check"></i> 500 m²'ye kadar alan</li>
+                            <li><i class="fas fa-check"></i> Profesyonel raporlama</li>
+                            <li><i class="fas fa-check"></i> 24 ay garanti</li>
+                            <li><i class="fas fa-check"></i> 7/24 acil destek</li>
+                        </ul>
+                        <a href="tel:05425485842" class="btn" style="width: 100%;">Paketi Seç</a>
+                    </div>
+                </div>
+                
+                <!-- Paket 4 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Site Paketi</h3>
+                        <div class="package-price">Özel<span>fiyat</span></div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Site ve bahçe ilaçlama</li>
+                            <li><i class="fas fa-check"></i> Yılda 4-8 kez ilaçlama</li>
+                            <li><i class="fas fa-check"></i> Sınırsız alan</li>
+                            <li><i class="fas fa-check"></i> Ortak alanlar dahil</li>
+                            <li><i class="fas fa-check"></i> Özel planlama</li>
+                            <li><i class="fas fa-check"></i> Bireysel danışmanlık</li>
+                        </ul>
+                        <a href="tel:05425485842" class="btn" style="width: 100%;">Fiyat Al</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p><strong>Not:</strong> Tüm paket fiyatları ortalama değerlerdir. Kesin fiyat için ücretsiz keşif talep ediniz.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Çağrı Bölümü -->
+    <section class="call-section">
+        <div class="container">
+            <div class="call-content">
+                <h2>Sezonluk İlaçlama Paketinizi Belirleyelim</h2>
+                <p>Alanınıza ve ihtiyacınıza özel sezonluk ilaçlama programı oluşturmak için hemen bize ulaşın. Ücretsiz keşif ve danışmanlık hizmetimizden yararlanın.</p>
+                
+                <div class="call-buttons">
+                    <a href="tel:05425485842" class="btn" style="background-color: white; color: #2e7d32; font-size: 18px; padding: 15px 30px;">
+                        <i class="fas fa-phone"></i> 0542 548 58 42
+                    </a>
+                    <a href="https://wa.me/905425485842" target="_blank" class="btn" style="background-color: #25D366; font-size: 18px; padding: 15px 30px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sıkça Sorulan Sorular Bölümü -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="green-title">Sezonluk İlaçlama Hakkında SSS</h2>
+                <p style="max-width: 700px; margin: 20px auto 0;">Sezonluk ilaçlama hizmeti ile ilgili en çok sorulan sorular</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Sezonluk ilaçlama ne sıklıkla yapılmalı?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sezonluk ilaçlama genellikle yılda 3-6 kez arasında yapılır. İdeal sıklık; bölgenin iklimine, haşere yoğunluğuna ve ilaçlanacak alanın özelliklerine göre belirlenir. Uzman ekibimiz keşif sonrası size en uygun programı önerecektir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Sezonluk ilaçlama paketinde neler var?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sezonluk paketlerimizde; belirlenen periyotlarda ilaçlama hizmeti, detaylı raporlama, garanti kapsamı, acil destek hattı ve önleyici danışmanlık hizmetleri bulunmaktadır. Paket içeriği seçtiğiniz programa göre değişiklik gösterebilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Sezonluk ilaçlama tek seferlik ilaçlamadan daha mı avantajlı?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, sezonluk ilaçlama birçok açıdan daha avantajlıdır. Ekonomik olarak daha uygun maliyetlidir, sürekli koruma sağlar, ani haşere artışlarına karşı önlem alır ve işletmeler için kesintisiz hizmet imkanı sunar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Otel/Restaurant için hangi paket uygun?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Otel ve restaurant gibi gıda işletmeleri için "İşletme Paketi" en uygun seçenektir. Bu paket daha sık ilaçlama periyotları, özel raporlama ve 7/24 acil destek içerir. Ancak kesin karar için ücretsiz keşif yapmamızı öneriyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Sezonluk ilaçlama için sözleşme yapılıyor mu?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, sezonluk ilaçlama hizmeti için her iki tarafın hak ve yükümlülüklerini belirleyen bir sözleşme imzalanır. Sözleşmede ilaçlama periyotları, garanti koşulları, fiyat ve ödeme şekli gibi tüm detaylar yer alır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Paket süresi dolunca ne olacak?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Paket süreniz dolmadan önce sizi bilgilendirip yeni dönem teklifimizi sunuyoruz. Memnun kaldığınız takdirde paketinizi yenileyebilir veya ihtiyaçlarınıza göre farklı bir pakete geçiş yapabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-logo">
+                    <h3>DİKKAT <span>İLAÇLAMA</span></h3>
+                    <p>Fethiye'nin profesyonel haşere kontrol uzmanı. Sağlık Bakanlığı onaylı ilaçlar ve uzman ekip ile hizmetinizdeyiz.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/dikkatilaclama.48" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/905425485842" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:05425485842" class="social-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Kurumsal</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Hizmetlerimiz</h4>
+                    <ul class="footer-links">
+                        <li><a href="yuruyen-hasereler.html">Yürüyen Haşereler</a></li>
+                        <li><a href="ucan-hasereler.html">Uçan Haşereler</a></li>
+                        <li><a href="tahta-kurusu.html">Tahta Kurusu</a></li>
+                        <li><a href="fare-ilaclama.html">Fare İlaçlama</a></li>
+                        <li><a href="sezonluk-ilaclama.html">Sezonluk İlaçlama</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>Muğla Fethiye Karaçulha Mahallesi Atatürk Bulvarı 127/A</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>0542 548 58 42</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>dikkatilaclama488@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2024 © Tüm Hakları Saklıdır - DİKKAT İLAÇLAMA | Fethiye Böcek İlaçlama Hizmetleri</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sabit Butonlar -->
+    <div class="fixed-buttons">
+        <a href="https://wa.me/905425485842" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05425485842" class="call-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    
+    <script>
+        // Mobil Menü Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        function toggleMobileMenu() {
+            const isActive = mainNav.classList.contains('active');
+            mainNav.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            
+            if (isActive) {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            } else {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.add('fa-times');
+            }
+        }
+        
+        function closeMobileMenu() {
+            mainNav.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Dropdown Menü için Mobil Uyumluluk
+        const servicesDropdown = document.getElementById('servicesDropdown');
+        
+        servicesDropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.toggle('active');
+            }
+        });
+        
+        // Menü Linklerine Tıklandığında Mobil Menüyü Kapat
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    if (!this.parentElement.classList.contains('dropdown') || 
+                        this.nextElementSibling === null) {
+                        closeMobileMenu();
+                    }
+                }
+            });
+        });
+        
+        // FAQ (Sıkça Sorulan Sorular) Fonksiyonalliği
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                });
+                
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    this.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+        
+        // Sayfa yüklendiğinde aktif menü linkini belirle
+        document.addEventListener('DOMContentLoaded', function() {
+            // Aktif sayfa kontrolü
+            const currentPage = window.location.pathname.split('/').pop();
+            const menuLinks = document.querySelectorAll('.main-nav a');
+            
+            menuLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || 
+                    (currentPage === '' && linkHref === 'index.html') ||
+                    (linkHref.includes('sezonluk') && currentPage.includes('sezonluk'))) {
+                    link.classList.add('active');
+                    
+                    // Dropdown içindeyse dropdown'ı da aktif yap
+                    const dropdown = link.closest('.dropdown');
+                    if (dropdown) {
+                        dropdown.querySelector('a').classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
