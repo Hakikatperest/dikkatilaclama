@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>İletişim - DİKKAT İLAÇLAMA Fethiye</title>
-    <meta name="description" content="DİKKAT İLAÇLAMA ile iletişime geçin. Fethiye böcek ilaçlama, haşere kontrolü ve dezenfeksiyon hizmetleri için 7/24 hizmetinizdeyiz.">
+    <title>Uçan Haşereler İlaçlama - DİKKAT İLAÇLAMA Fethiye</title>
+    <meta name="description" content="DİKKAT İLAÇLAMA, Fethiye'de sivrisinek, sinek, arı, güve ve diğer uçan haşerelere karşı profesyonel ilaçlama hizmetleri sunmaktadır.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -262,11 +262,10 @@
             order: 2;
         }
         
-        /* HERO BÖLÜMÜ - İletişim */
+        /* SAYFA HERO BÖLÜMÜ */
         .page-hero {
             position: relative;
-            height: 50vh;
-            min-height: 350px;
+            height: 400px;
             overflow: hidden;
             color: white;
             text-align: center;
@@ -282,9 +281,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-image: url('images/ucan.webp');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
         
         .page-hero-overlay {
@@ -293,21 +293,20 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
         }
         
         .page-hero-content {
             position: relative;
             z-index: 2;
             max-width: 800px;
-            margin: 0 auto;
             padding: 0 20px;
             width: 100%;
         }
         
         .page-hero h1 {
             font-size: 48px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 700;
             color: white !important;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -316,259 +315,153 @@
         
         .page-hero p {
             font-size: 20px;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
             opacity: 0.9;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        /* İLETİŞİM BÖLÜMLERİ */
-        .contact-section {
+        /* İÇERİK BÖLÜMÜ */
+        .page-content {
             width: 100%;
+            padding: 80px 0;
         }
         
-        .contact-container {
+        .content-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
-            align-items: start;
-        }
-        
-        .contact-info {
-            background-color: #f8f9fa;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .contact-info h3 {
-            font-size: 28px;
-            margin-bottom: 30px;
-            color: #222;
-        }
-        
-        .contact-details {
-            margin-bottom: 40px;
-        }
-        
-        .contact-item {
-            display: flex;
-            margin-bottom: 25px;
-            align-items: flex-start;
-        }
-        
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background-color: #2e7d32;
-            border-radius: 50%;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 20px;
-            margin-right: 20px;
-            flex-shrink: 0;
+            width: 100%;
         }
         
-        .contact-text h4 {
-            font-size: 18px;
-            margin-bottom: 5px;
+        .content-text h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
             color: #222;
         }
         
-        .contact-text p {
-            color: #666;
-            font-size: 16px;
+        .content-text h2 span {
+            color: #d32f2f;
         }
         
-        .social-media {
+        .content-text p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .content-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             margin-top: 30px;
         }
         
-        .social-media h4 {
-            font-size: 20px;
-            margin-bottom: 20px;
+        .feature-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .feature-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
             color: #222;
         }
         
-        .social-icons {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .social-icon:hover {
-            transform: translateY(-5px);
-        }
-        
-        .social-instagram {
-            background-color: #E4405F;
-        }
-        
-        .social-whatsapp {
-            background-color: #25D366;
-        }
-        
-        .social-phone {
-            background-color: #2e7d32;
-        }
-        
-        .social-email {
-            background-color: #d32f2f;
-        }
-        
-        /* İletişim Formu */
-        .contact-form {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .contact-form h3 {
-            font-size: 28px;
-            margin-bottom: 30px;
-            color: #222;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: #333;
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #2e7d32;
-            box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        /* Harita Bölümü */
-        .map-section {
-            padding: 0 0 80px;
-            width: 100%;
-        }
-        
-        .map-container {
-            width: 100%;
-            height: 400px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Çalışma Saatleri */
-        .hours-section {
+        /* HİZMET DETAYLARI */
+        .service-details {
             background-color: #f8f9fa;
             width: 100%;
         }
         
-        .hours-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hours-grid {
+        .service-types {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
         
-        .hours-card {
+        .service-type {
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             text-align: center;
+            transition: all 0.3s ease;
         }
         
-        .hours-card h4 {
-            font-size: 22px;
+        .service-type:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-type-icon {
+            font-size: 40px;
+            color: #2e7d32;
             margin-bottom: 20px;
+        }
+        
+        .service-type h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
             color: #222;
         }
         
-        .hours-list li {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+        .service-type p {
+            color: #666;
+            font-size: 15px;
         }
         
-        .hours-list li:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
+        /* İŞLEM SÜRECİ */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+            position: relative;
         }
         
-        .hours-list .day {
-            font-weight: 500;
-            color: #333;
+        .process-step {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            position: relative;
         }
         
-        .hours-list .time {
-            color: #2e7d32;
-            font-weight: 600;
-        }
-        
-        .emergency-hours {
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
             background-color: #d32f2f;
             color: white;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 30px;
-        }
-        
-        .emergency-hours h4 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: white;
-        }
-        
-        .emergency-hours p {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
             font-size: 18px;
-            margin-bottom: 20px;
+        }
+        
+        .process-step h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #222;
         }
         
         /* FOOTER */
@@ -642,6 +535,29 @@
             margin-top: 3px;
         }
         
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #2e7d32;
+            transform: translateY(-3px);
+        }
+        
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding: 25px 0;
@@ -698,22 +614,7 @@
         }
         
         /* MOBİL UYUMLULUK */
-        @media (max-width: 1200px) {
-            .hours-grid {
-                grid-template-columns: 1fr;
-                max-width: 500px;
-            }
-        }
-        
         @media (max-width: 992px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
             .header-phone-button {
                 display: none;
             }
@@ -726,9 +627,21 @@
                 font-size: 18px;
             }
             
-            .form-row {
+            .content-container {
                 grid-template-columns: 1fr;
-                gap: 0;
+                gap: 40px;
+            }
+            
+            .service-types {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
         
@@ -790,8 +703,23 @@
             }
             
             .page-hero {
-                height: 40vh;
-                min-height: 300px;
+                height: 350px;
+            }
+            
+            .page-hero h1 {
+                font-size: 32px;
+            }
+            
+            .service-types {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
             }
             
             .fixed-buttons {
@@ -809,35 +737,14 @@
                 font-size: 20px;
             }
             
-            .page-hero h1 {
-                font-size: 32px;
-            }
-            
-            .container {
-                padding: 0 15px;
-            }
-            
             section {
                 padding: 60px 0;
-            }
-            
-            .section-title h2 {
-                font-size: 28px;
-            }
-            
-            .contact-info, .contact-form {
-                padding: 30px;
-            }
-            
-            .map-container {
-                height: 300px;
             }
         }
         
         @media (max-width: 576px) {
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
+            .page-hero {
+                height: 300px;
             }
             
             .page-hero h1 {
@@ -848,38 +755,18 @@
                 font-size: 16px;
             }
             
-            section {
-                padding: 50px 0;
-            }
-            
-            .logo-text {
-                font-size: 18px;
-            }
-            
             .section-title h2 {
-                font-size: 24px;
+                font-size: 28px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
             
             .fixed-buttons {
                 bottom: 60px;
                 right: 15px;
-            }
-            
-            .contact-info, .contact-form {
-                padding: 20px;
-            }
-            
-            .contact-icon {
-                width: 40px;
-                height: 40px;
-                font-size: 18px;
-                margin-right: 15px;
-            }
-            
-            .social-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
             }
         }
         
@@ -908,38 +795,28 @@
             width: 100%;
         }
         
-        .breadcrumb {
-            padding: 20px 0;
-            background-color: #f8f9fa;
-            width: 100%;
-        }
-        
-        .breadcrumb-container {
-            display: flex;
+        .call-button-section {
+            display: inline-flex;
             align-items: center;
-            gap: 10px;
-            font-size: 15px;
-            color: #666;
-        }
-        
-        .breadcrumb a {
-            color: #2e7d32;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        
-        .breadcrumb i {
-            font-size: 12px;
-            opacity: 0.7;
-        }
-        
-        .form-submit-btn {
-            width: 100%;
-            padding: 15px;
-            font-size: 18px;
+            background-color: #d32f2f;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 4px;
             font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .call-button-section:hover {
+            background-color: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .call-button-section i {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -977,7 +854,7 @@
                         <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
                         <li class="dropdown" id="servicesDropdown">
-                            <a href="ilaclama-turleri.html">İlaçlama Türleri <i class="fas fa-chevron-down"></i></a>
+                            <a href="ilaclama-turleri.html" class="active">İlaçlama Türleri <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content">
                                 <a href="yuruyen-hasereler.html">Yürüyen Haşereler</a>
                                 <a href="ucan-hasereler.html">Uçan Haşereler</a>
@@ -987,7 +864,7 @@
                                 <a href="sezonluk-ilaclama.html">Sezonluk İlaçlama</a>
                             </div>
                         </li>
-                        <li><a href="iletisim.html" class="active">İletişim</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
                     </ul>
                 </nav>
             </div>
@@ -997,235 +874,159 @@
         <div class="menu-overlay" id="menuOverlay"></div>
     </header>
     
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <div class="container">
-            <div class="breadcrumb-container">
-                <a href="index.html">Ana Sayfa</a>
-                <i class="fas fa-chevron-right"></i>
-                <span>İletişim</span>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Hero Bölümü -->
+    <!-- Sayfa Hero Bölümü -->
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-overlay"></div>
-        
         <div class="container">
             <div class="page-hero-content">
-                <h1>BİZE ULAŞIN</h1>
-                <p>DİKKAT İLAÇLAMA ile iletişime geçin. Haşere problemleriniz için profesyonel çözümler sunuyoruz.</p>
-                
-                <a href="tel:05425485842" class="btn btn-red" style="font-size: 18px; padding: 15px 30px;">
-                    <i class="fas fa-phone"></i> ACİL İLAÇLAMA: 0542 548 58 42
+                <h1>UÇAN HAŞERELER İLAÇLAMA</h1>
+                <p>Fethiye'de sivrisinek, sinek, arı, güve ve diğer uçan haşerelere karşı profesyonel çözümler</p>
+                <a href="tel:05425485842" class="call-button-section">
+                    <i class="fas fa-phone"></i> Hemen Ara: 0542 548 58 42
                 </a>
             </div>
         </div>
     </section>
     
-    <!-- İletişim Bilgileri ve Form -->
-    <section class="contact-section">
+    <!-- İçerik Bölümü -->
+    <section class="page-content">
         <div class="container">
-            <div class="contact-container">
-                <!-- İletişim Bilgileri -->
-                <div class="contact-info">
-                    <h3 class="green-title">İletişim Bilgilerimiz</h3>
+            <div class="content-container">
+                <div class="content-text">
+                    <h2><span>Uçan Haşereler</span> ile Etkin Mücadele</h2>
+                    <p>Uçan haşereler, özellikle yaz aylarında hem konforunuzu bozar hem de sağlık açısından ciddi riskler oluşturur. Sivrisinek, sinek, arı, güve ve diğer uçan böcekler hastalık taşıyıcı olabilir, alerjik reaksiyonlara neden olabilir ve yaşam kalitenizi düşürebilir.</p>
+                    <p><strong>DİKKAT İLAÇLAMA</strong> olarak, Fethiye ve çevresinde uçan haşerelere karşı en etkili ve kalıcı çözümleri sunuyoruz. Sağlık Bakanlığı onaylı ilaçlar ve modern ekipmanlarımızla, alanında uzman ekibimiz, sorununuzu kökünden çözmek için hazır.</p>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Adres</h4>
-                                <p>Muğla Fethiye Karaçulha Mahallesi<br>Atatürk Bulvarı 127/A</p>
-                            </div>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-check-circle"></i> Sağlık Bakanlığı Onaylı İlaçlar</h4>
+                            <p>İnsan sağlığına zarar vermeyen, çevre dostu ilaçlar kullanıyoruz.</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Telefon</h4>
-                                <p>0542 548 58 42</p>
-                            </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-shield-alt"></i> 6 Ay Garantili Hizmet</h4>
+                            <p>Tüm uçan haşere ilaçlama hizmetlerimiz 6 ay garantilidir.</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>E-posta</h4>
-                                <p>dikkatilaclama488@gmail.com</p>
-                            </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-clock"></i> 7/24 Acil Servis</h4>
+                            <p>Hafta sonu, tatil günü demeden 7 gün 24 saat hizmetinizdeyiz.</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>WhatsApp</h4>
-                                <p>0542 548 58 42</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-media">
-                        <h4>Sosyal Medya</h4>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/dikkatilaclama.48" target="_blank" class="social-icon social-instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/905425485842" target="_blank" class="social-icon social-whatsapp">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="tel:05425485842" class="social-icon social-phone">
-                                <i class="fas fa-phone"></i>
-                            </a>
-                            <a href="mailto:dikkatilaclama488@gmail.com" class="social-icon social-email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-user-tie"></i> Uzman Ekip</h4>
+                            <p>Deneyimli ve sertifikalı personelimizle profesyonel hizmet.</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- İletişim Formu -->
-                <div class="contact-form">
-                    <h3 class="red-title">İletişim Formu</h3>
-                    <p>Size en kısa sürede dönüş yapabilmemiz için formu doldurun.</p>
-                    
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Ad Soyad *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Telefon *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">E-posta</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Hizmet Türü</label>
-                            <select id="service" name="service">
-                                <option value="">Seçiniz</option>
-                                <option value="yuruyen-hasereler">Yürüyen Haşereler</option>
-                                <option value="ucan-hasereler">Uçan Haşereler</option>
-                                <option value="tahta-kurusu">Tahta Kurusu</option>
-                                <option value="orumcek">Örümcek İlaçlama</option>
-                                <option value="fare">Fare İlaçlama</option>
-                                <option value="sezonluk">Sezonluk İlaçlama</option>
-                                <option value="dezenfeksiyon">Dezenfeksiyon</option>
-                                <option value="diger">Diğer</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mesajınız *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn form-submit-btn">
-                            <i class="fas fa-paper-plane"></i> Mesaj Gönder
-                        </button>
-                    </form>
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Uçan Haşere İlaçlama">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Harita Bölümü -->
-    <section class="map-section">
+    <!-- Hizmet Detayları -->
+    <section class="service-details">
         <div class="container">
             <div class="section-title">
-                <h2 class="green-title">Neredeyiz?</h2>
-                <p style="max-width: 800px; margin: 20px auto 0; font-size: 18px; color: #666;">Fethiye Karaçulha'da hizmet veriyoruz. Konumumuzu haritada görebilirsiniz.</p>
+                <h2 class="green-title">Uçan Haşere İlaçlama Hizmetlerimiz</h2>
+                <p style="max-width: 800px; margin: 20px auto 0; color: #666;">Fethiye'de ev, iş yeri, otel, restaurant, bahçe ve tüm açık/kapalı alanlarda uçan haşerelere karşı özel çözümler sunuyoruz.</p>
             </div>
             
-            <div class="map-container">
-                <!-- Google Maps Embed -->
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.123456789012!2d29.12345678901234!3d36.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDA3JzI0LjQiTiAyOcKwMDcnMjQuNCJF!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="https://goo.gl/maps/example" target="_blank" class="btn">
-                    <i class="fas fa-map-marked-alt"></i> Haritada Aç
-                </a>
+            <div class="service-types">
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-mosquito"></i>
+                    </div>
+                    <h3>Sivrisinek İlaçlama</h3>
+                    <p>Larva ve ergin sivrisineklere karşı etkili mücadele. Özellikle bahçe, havuz çevresi ve sulak alanlarda kalıcı çözüm.</p>
+                </div>
+                
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-fly"></i>
+                    </div>
+                    <h3>Sinek İlaçlama</h3>
+                    <p>Karasinek, meyve sineği ve diğer sinek türlerine karşı profesyonel ilaçlama. Restaurant, kafe, gıda işletmeleri için özel çözümler.</p>
+                </div>
+                
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-bee"></i>
+                    </div>
+                    <h3>Arı İlaçlama & Yuva Temizliği</h3>
+                    <p>Bal arısı, eşek arısı ve yaban arılarına karşı güvenli müdahale. Yuva tespiti ve profesyonel temizlik hizmeti.</p>
+                </div>
+                
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-moth"></i>
+                    </div>
+                    <h3>Güve İlaçlama</h3>
+                    <p>Gıda güvesi, elbise güvesi ve diğer güve türlerine karşı koruma. Depo, kiler ve gardırop alanları için özel uygulamalar.</p>
+                </div>
+                
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Kuş & Yarasa Kovucu Sistemler</h3>
+                    <p>Bina cepheleri, çatı araları ve balkonlarda kuş ve yarasa sorunlarına karşı fiziksel ve kimyasal çözümler.</p>
+                </div>
+                
+                <div class="service-type">
+                    <div class="service-type-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>ULV Sisleme Yöntemi</h3>
+                    <p>Ultra düşük hacimli sisleme cihazları ile geniş alanlarda etkili ve ekonomik uçan haşere kontrolü.</p>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Çalışma Saatleri -->
-    <section class="hours-section">
+    <!-- İşlem Süreci -->
+    <section>
         <div class="container">
             <div class="section-title">
-                <h2 class="red-title">Çalışma Saatlerimiz</h2>
+                <h2 class="red-title">Uçan Haşere İlaçlama Süreci</h2>
+                <p style="max-width: 800px; margin: 20px auto 0; color: #666;">Profesyonel ilaçlama hizmetimiz 4 temel adımdan oluşur:</p>
             </div>
             
-            <div class="hours-container">
-                <div class="hours-grid">
-                    <div class="hours-card">
-                        <h4>Normal Çalışma Saatleri</h4>
-                        <ul class="hours-list">
-                            <li>
-                                <span class="day">Pazartesi - Cuma</span>
-                                <span class="time">08:00 - 19:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Cumartesi</span>
-                                <span class="time">09:00 - 18:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Pazar</span>
-                                <span class="time">10:00 - 16:00</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="hours-card">
-                        <h4>Ücretsiz Keşif Saatleri</h4>
-                        <ul class="hours-list">
-                            <li>
-                                <span class="day">Pazartesi - Cuma</span>
-                                <span class="time">10:00 - 17:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Cumartesi</span>
-                                <span class="time">10:00 - 16:00</span>
-                            </li>
-                            <li>
-                                <span class="day">Pazar</span>
-                                <span class="time">Kapalı</span>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Ücretsiz Keşif</h4>
+                    <p>Alanınıza gelerek haşere türünü ve yoğunluğunu tespit ediyoruz.</p>
                 </div>
                 
-                <div class="emergency-hours">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Acil İlaçlama Hattı</h4>
-                    <p>Haftanın 7 günü, 24 saat kesintisiz hizmet</p>
-                    <a href="tel:05425485842" class="btn" style="background-color: white; color: #d32f2f; font-size: 18px; padding: 12px 30px;">
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Uygun İlaç Seçimi</h4>
+                    <p>Haşere türüne ve alanın özelliklerine göre en uygun ilacı belirliyoruz.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Profesyonel Uygulama</h4>
+                    <p>Uzman ekibimiz ve modern ekipmanlarımızla ilaçlama işlemini gerçekleştiriyoruz.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Garantili Sonuç</h4>
+                    <p>İlaçlama sonrası kontrol ve 6 ay garanti ile hizmetinizi tamamlıyoruz.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="margin-bottom: 20px; color: #222;">Uçan Haşere Problemleriniz İçin Hemen Bize Ulaşın!</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                    <a href="tel:05425485842" class="btn btn-red" style="padding: 15px 30px; font-size: 18px;">
                         <i class="fas fa-phone"></i> 0542 548 58 42
+                    </a>
+                    <a href="https://wa.me/905425485842" target="_blank" class="btn" style="background-color: #25D366; padding: 15px 30px; font-size: 18px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
                     </a>
                 </div>
             </div>
@@ -1257,7 +1058,7 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Ana Sayfa</a></li>
                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                        <li><a href="iletisim.html" class="active">İletişim</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
                     </ul>
                 </div>
                 
@@ -1265,7 +1066,7 @@
                     <h4 class="footer-title">Hizmetlerimiz</h4>
                     <ul class="footer-links">
                         <li><a href="yuruyen-hasereler.html">Yürüyen Haşereler</a></li>
-                        <li><a href="ucan-hasereler.html">Uçan Haşereler</a></li>
+                        <li><a href="ucan-hasereler.html" class="active">Uçan Haşereler</a></li>
                         <li><a href="tahta-kurusu.html">Tahta Kurusu</a></li>
                         <li><a href="fare-ilaclama.html">Fare İlaçlama</a></li>
                     </ul>
@@ -1365,33 +1166,10 @@
             });
         });
         
-        // İletişim Formu İşleme
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Form verilerini al
-            const formData = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                email: document.getElementById('email').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Basit validasyon
-            if (!formData.name || !formData.phone || !formData.message) {
-                alert('Lütfen zorunlu alanları doldurun (Ad Soyad, Telefon, Mesaj)');
-                return;
-            }
-            
-            // Burada form verilerini bir API'ye gönderebilirsiniz
-            // Şimdilik basit bir simülasyon yapalım
-            alert('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.');
-            
-            // Formu temizle
-            contactForm.reset();
+        // Hero arkaplanı için ucan.webp kullan
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroBg = document.querySelector('.page-hero-bg');
+            heroBg.style.backgroundImage = "url('images/ucan.webp')";
         });
     </script>
 </body>
