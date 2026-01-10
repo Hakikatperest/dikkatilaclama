@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DİKKAT İLAÇLAMA - Fethiye Böcek İlaçlama Hizmetleri</title>
+    <meta name="description" content="DİKKAT İLAÇLAMA, Fethiye ve çevresinde profesyonel böcek ilaçlama, haşere kontrolü ve dezenfeksiyon hizmetleri sunmaktadır.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* TEMEL STİLLER */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #1b5e20;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-red {
+            background-color: #d32f2f;
+        }
+        
+        .btn-red:hover {
+            background-color: #b71c1c;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 15px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #222;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .red-title {
+            color: #d32f2f !important;
+        }
+        
+        .green-title {
+            color: #2e7d32 !important;
+        }
+        
+        /* HEADER */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+            width: 100%;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #d32f2f;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .logo-text span {
+            color: #2e7d32;
+        }
+        
+        .header-phone-button {
+            display: flex;
+            align-items: center;
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 15px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-left: 20px;
+        }
+        
+        .header-phone-button:hover {
+            background-color: #b71c1c;
+            transform: translateY(-2px);
+        }
+        
+        .header-phone-button i {
+            margin-right: 8px;
+        }
+        
+        .main-nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            gap: 25px;
+            margin: 0 auto;
+        }
+        
+        .main-nav a {
+            font-weight: 500;
+            font-size: 16px;
+            color: #333;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .main-nav a:hover, .main-nav a.active {
+            color: #2e7d32;
+        }
+        
+        .main-nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .main-nav a:hover:after, .main-nav a.active:after {
+            width: 100%;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            border-top: 3px solid #2e7d32;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            padding-left: 25px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            order: 2;
+        }
+        
+        /* HERO BÖLÜMÜ */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white !important;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            letter-spacing: 1px;
+        }
+        
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-weight: 400;
+            color: #ffeb3b;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 35px;
+            opacity: 0.9;
+            max-width: 700px;
+        }
+        
+        .call-button-hero {
+            display: inline-flex;
+            align-items: center;
+            background-color: #d32f2f;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .call-button-hero:hover {
+            background-color: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .call-button-hero i {
+            margin-right: 10px;
+        }
+        
+        .whatsapp-button-hero {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        
+        .whatsapp-button-hero:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .whatsapp-button-hero i {
+            margin-right: 10px;
+        }
+        
+        .slider-controls {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .slider-dots {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .slider-dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+        
+        /* HİZMETLER BÖLÜMÜ - KARTLAR */
+        .services {
+            background-color: #f8f9fa;
+            width: 100%;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        
+        /* KART STİLLERİ - GÜNCELLENDİ */
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            height: 350px;
+            cursor: pointer;
+            perspective: 1000px;
+            width: 100%;
+        }
+        
+        .service-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .service-card.flipped .service-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .service-card-front, .service-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* KART ÖN YÜZÜ - RESİMLER ORJİNAL YÖNÜNDE */
+        .service-card-front {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transform: rotateY(0deg);
+        }
+        
+        .service-card-front::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+            z-index: 1;
+        }
+        
+        /* Her kart için arkaplan görseli */
+        .service-card[data-product="yuruyen"] .service-card-front {
+            background-image: url('images/yuruyen.webp');
+        }
+        
+        .service-card[data-product="ucan"] .service-card-front {
+            background-image: url('images/ucan.webp');
+        }
+        
+        .service-card[data-product="tahta"] .service-card-front {
+            background-image: url('images/tahta.webp');
+        }
+        
+        .service-card[data-product="orumcek"] .service-card-front {
+            background-image: url('images/orumcek.webp');
+        }
+        
+        .service-card[data-product="fare"] .service-card-front {
+            background-image: url('images/fare.webp');
+        }
+        
+        .service-card[data-product="sezonluk"] .service-card-front {
+            background-image: url('images/sezonluk.webp');
+        }
+        
+        .service-content {
+            padding: 30px 20px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .service-icon {
+            font-size: 40px;
+            color: white !important;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .service-content h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: white !important;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            width: 100%;
+        }
+        
+        .service-content p {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.5;
+            color: white !important;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            width: 100%;
+        }
+        
+        /* KART ARKA YÜZÜ - DÜZELTİLMİŞ VE ORTALANMIŞ STİLLER */
+        .service-card-back {
+            background-color: #2e7d32;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            box-sizing: border-box;
+        }
+        
+        .service-card-back h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            line-height: 1.3;
+            padding: 0;
+        }
+        
+        .product-features {
+            margin-bottom: 15px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            max-height: 130px;
+            overflow-y: auto;
+            padding: 5px 0;
+        }
+        
+        .product-features::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        .product-features::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+        }
+        
+        .product-features::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+        
+        .product-features ul {
+            list-style: none;
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .product-features li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: white;
+            opacity: 0.95;
+            display: flex;
+            align-items: flex-start;
+            padding: 0 5px;
+        }
+        
+        .product-features i {
+            color: #fff;
+            margin-right: 8px;
+            font-size: 14px;
+            flex-shrink: 0;
+            min-width: 18px;
+            margin-top: 2px;
+        }
+        
+        .all-products-text {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 10px 0;
+            color: #fff;
+            padding: 10px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+        
+        .service-card-back .btn {
+            background-color: white;
+            color: #2e7d32;
+            font-weight: 700;
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: auto;
+            display: inline-block;
+            text-decoration: none;
+            min-width: 140px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 5px;
+            white-space: nowrap;
+        }
+        
+        .service-card-back .btn:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Flip indicator */
+        .flip-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2e7d32;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 10;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .flip-indicator:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+        
+        .flip-indicator i {
+            font-size: 10px;
+        }
+        
+        /* HAKKIMIZDA BÖLÜMÜ */
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .about-img {
+            position: relative;
+            width: 100%;
+        }
+        
+        .about-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background-color: #d32f2f;
+            color: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+        }
+        
+        .about-badge span:first-child {
+            font-size: 30px;
+            line-height: 1;
+        }
+        
+        .about-badge span:last-child {
+            font-size: 16px;
+        }
+        
+        .about-content h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .features-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .features-list i {
+            color: #2e7d32;
+            margin-right: 10px;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        
+        /* FAQ BÖLÜMÜ */
+        .faq-section {
+            background-color: #fff;
+            padding: 80px 0;
+            width: 100%;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            width: 100%;
+        }
+        
+        .faq-question {
+            background-color: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question.active {
+            background-color: #2e7d32;
+            color: white;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 0;
+        }
+        
+        /* FOOTER */
+        footer {
+            background-color: #222;
+            color: #ddd;
+            padding-top: 80px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+        
+        .footer-logo h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo h3 span {
+            color: #2e7d32;
+        }
+        
+        .footer-logo p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .footer-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-title:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #2e7d32;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a:hover {
+            color: #2e7d32;
+            padding-left: 5px;
+        }
+        
+        .contact-info-footer li {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .contact-info-footer i {
+            color: #2e7d32;
+            margin-right: 15px;
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #2e7d32;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px 0;
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+        }
+        
+        /* SABİT BUTONLAR */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .call-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background-color: #2e7d32;
+        }
+        
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            background-color: #25D366;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* MOBİL UYUMLULUK */
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .service-card {
+                height: 320px;
+            }
+            
+            .service-card-back h3 {
+                font-size: 18px;
+            }
+            
+            .product-features li {
+                font-size: 13px;
+            }
+            
+            .service-card-back .btn {
+                padding: 10px 18px;
+                font-size: 14px;
+                min-width: 130px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .service-card {
+                height: 300px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 38px;
+            }
+            
+            .hero h2 {
+                font-size: 24px;
+            }
+            
+            .header-phone-button {
+                display: none;
+            }
+            
+            .service-content h3 {
+                font-size: 20px;
+            }
+            
+            .service-content p {
+                font-size: 14px;
+            }
+            
+            .service-card-back {
+                padding: 15px;
+            }
+            
+            .service-card-back h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            .product-features li {
+                font-size: 12.5px;
+                margin-bottom: 6px;
+            }
+            
+            .all-products-text {
+                font-size: 14px;
+                margin: 8px 0;
+                padding: 8px 0;
+            }
+            
+            .service-card-back .btn {
+                padding: 9px 16px;
+                font-size: 13px;
+                min-width: 120px;
+            }
+            
+            .product-features {
+                max-height: 110px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                padding: 80px 30px 30px;
+                transition: right 0.4s ease;
+                z-index: 1001;
+                overflow-y: auto;
+                justify-content: flex-start;
+            }
+            
+            .main-nav.active {
+                right: 0;
+            }
+            
+            .main-nav ul {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            
+            .main-nav li {
+                border-bottom: 1px solid #f1f1f1;
+                width: 100%;
+            }
+            
+            .main-nav a {
+                display: block;
+                padding: 15px 0;
+                width: 100%;
+            }
+            
+            .dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border-top: none;
+                padding-left: 20px;
+                display: none;
+                width: 100%;
+            }
+            
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+            
+            .hero {
+                padding: 100px 0;
+                height: auto;
+                min-height: 600px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .service-card {
+                height: 280px;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .fixed-buttons {
+                bottom: 70px;
+                right: 20px;
+            }
+            
+            .call-btn, .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .slider-controls {
+                bottom: 20px;
+            }
+            
+            .call-button-hero, .whatsapp-button-hero {
+                padding: 12px 20px;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero h2 {
+                font-size: 20px;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+            
+            .faq-question {
+                padding: 16px;
+                font-size: 16px;
+            }
+            
+            .faq-answer.active {
+                padding: 16px;
+            }
+            
+            .service-content {
+                padding: 25px 15px;
+            }
+            
+            .service-icon {
+                font-size: 35px;
+                margin-bottom: 15px;
+            }
+            
+            .service-content h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            .service-content p {
+                font-size: 13px;
+            }
+            
+            .service-card-back {
+                padding: 12px;
+            }
+            
+            .service-card-back h3 {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            
+            .product-features li {
+                font-size: 11px;
+                margin-bottom: 5px;
+                padding: 0;
+            }
+            
+            .product-features i {
+                font-size: 11px;
+                margin-right: 5px;
+                min-width: 14px;
+            }
+            
+            .all-products-text {
+                font-size: 13px;
+                margin: 6px 0;
+                padding: 6px 0;
+            }
+            
+            .service-card-back .btn {
+                padding: 8px 14px;
+                font-size: 12px;
+                min-width: 110px;
+            }
+            
+            .product-features {
+                max-height: 90px;
+                margin-bottom: 8px;
+            }
+            
+            .flip-indicator {
+                top: 10px;
+                right: 10px;
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+            
+            .service-card {
+                height: 260px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero h2 {
+                font-size: 18px;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            .about-badge {
+                width: 100px;
+                height: 100px;
+                bottom: -15px;
+                right: -15px;
+            }
+            
+            .about-badge span:first-child {
+                font-size: 24px;
+            }
+            
+            .about-badge span:last-child {
+                font-size: 14px;
+            }
+            
+            .section-title h2 {
+                font-size: 24px;
+            }
+            
+            .fixed-buttons {
+                bottom: 60px;
+                right: 15px;
+            }
+            
+            .service-content {
+                padding: 20px 15px;
+            }
+            
+            .service-icon {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            
+            .service-content h3 {
+                font-size: 17px;
+                margin-bottom: 8px;
+            }
+            
+            .service-content p {
+                font-size: 12px;
+                line-height: 1.4;
+            }
+            
+            .service-card-back {
+                padding: 10px;
+            }
+            
+            .service-card-back h3 {
+                font-size: 15px;
+                margin-bottom: 6px;
+            }
+            
+            .product-features li {
+                font-size: 10px;
+                margin-bottom: 4px;
+                line-height: 1.2;
+                padding: 0 3px;
+            }
+            
+            .product-features i {
+                font-size: 10px;
+                margin-right: 4px;
+                min-width: 12px;
+            }
+            
+            .all-products-text {
+                font-size: 12px;
+                margin: 5px 0;
+                padding: 5px 0;
+            }
+            
+            .service-card-back .btn {
+                padding: 7px 12px;
+                font-size: 11px;
+                min-width: 100px;
+            }
+            
+            .product-features {
+                max-height: 80px;
+                margin-bottom: 5px;
+            }
+            
+            .flip-indicator {
+                top: 8px;
+                right: 8px;
+                padding: 3px 6px;
+                font-size: 9px;
+            }
+        }
+        
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+        
+        .emergency-banner {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Acil Durum Bannerı -->
+    <div class="emergency-banner">
+        <i class="fas fa-exclamation-triangle"></i> ACİL İLAÇLAMA HİZMETİ: 7/24 HİZMETİNİZDEYİZ! <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <!-- Logo Alanı -->
+                <div class="logo-container">
+                    <div class="logo-text">
+                        DİKKAT <span>İLAÇLAMA</span>
+                    </div>
+                </div>
+                
+                <!-- Menü barında telefon butonu -->
+                <a href="tel:05425485842" class="header-phone-button">
+                    <i class="fas fa-phone"></i> Hemen Ara
+                </a>
+                
+                <!-- Mobil Menü Butonu -->
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <!-- Ana Navigasyon -->
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                        <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li class="dropdown" id="servicesDropdown">
+                            <a href="ilaclama-turleri.html">İlaçlama Türleri <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="yuruyen-hasereler.html">Yürüyen Haşereler</a>
+                                <a href="ucan-hasereler.html">Uçan Haşereler</a>
+                                <a href="tahta-kurusu.html">Tahta Kurusu</a>
+                                <a href="orumcek-ilaclama.html">Örümcek İlaçlama</a>
+                                <a href="fare-ilaclama.html">Fare İlaçlama</a>
+                                <a href="sezonluk-ilaclama.html">Sezonluk İlaçlama</a>
+                            </div>
+                        </li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobil Menü Overlay -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </header>
+    
+    <!-- Hero Bölümü (Slider) -->
+    <section class="hero" id="home">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="slide active" id="slide1" style="background-image: url('images/dikkat1.webp');">
+                <div class="slide-overlay"></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" id="slide2" style="background-image: url('images/dikkat2.webp');">
+                <div class="slide-overlay"></div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" id="slide3" style="background-image: url('images/dikkat3.webp');">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>DİKKAT İLAÇLAMA</h1>
+                <h2>Fethiye'nin Profesyonel Haşere Kontrol Uzmanı</h2>
+                <p>Ev, iş yeri, otel, restoran ve tüm yaşam alanlarınızda böcek, haşere, kemirgen ilaçlama ve dezenfeksiyon hizmetleri. Sağlığınız bizim için önemli!</p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                    <!-- Telefon Arama Butonu -->
+                    <a href="tel:05425485842" class="call-button-hero">
+                        <i class="fas fa-phone"></i> Hemen Ara: 0542 548 58 42
+                    </a>
+                    
+                    <!-- WhatsApp Butonu -->
+                    <a href="https://wa.me/905425485842" target="_blank" class="whatsapp-button-hero">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Kontrolleri -->
+        <div class="slider-controls">
+            <div class="slider-dots">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hizmetler Bölümü -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="red-title" style="margin-top: 30px; margin-bottom: 30px;">Profesyonel Çözümlerimizle Haşerelere Son!</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Yürüyen Haşereler -->
+                <div class="service-card" data-product="yuruyen">
+                    <div class="service-card-inner">
+                        <!-- ÖN YÜZ: Görsel ve içerik -->
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-bug"></i>
+                                </div>
+                                <h3>Yürüyen Haşereler</h3>
+                                <p>Hamam böceği, karınca, pire, kene ve diğer yürüyen haşereler</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        
+                        <!-- ARKA YÜZ: Yeşil arka plan, özellik listesi ve buton -->
+                        <div class="service-card-back">
+                            <h3>Yürüyen Haşereler</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Hamam Böceği İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Karınca İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Pire & Kene İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Kalıcı Çözüm</li>
+                                    <li><i class="fas fa-check"></i> Güvenli İlaçlar</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="yuruyen-hasereler.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Uçan Haşereler -->
+                <div class="service-card" data-product="ucan">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-mosquito"></i>
+                                </div>
+                                <h3>Uçan Haşereler</h3>
+                                <p>Sivrisinek, sinek, arı, güve ve diğer uçan haşereler</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Uçan Haşereler</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Sivrisinek Mücadelesi</li>
+                                    <li><i class="fas fa-check"></i> Sinek İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Arı Yuvaları Temizliği</li>
+                                    <li><i class="fas fa-check"></i> Güve İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Çevre Dostu Çözümler</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="ucan-hasereler.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tahta Kurusu -->
+                <div class="service-card" data-product="tahta">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <h3>Tahta Kurusu</h3>
+                                <p>Tahta kurusu tespiti ve profesyonel ilaçlama çözümleri</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Tahta Kurusu</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Profesyonel Tespit</li>
+                                    <li><i class="fas fa-check"></i> Etkili İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Yumurta ve Larva Temizliği</li>
+                                    <li><i class="fas fa-check"></i> Önleyici Uygulamalar</li>
+                                    <li><i class="fas fa-check"></i> Garantili Çözüm</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="tahta-kurusu.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Örümcek İlaçlama -->
+                <div class="service-card" data-product="orumcek">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-spider"></i>
+                                </div>
+                                <h3>Örümcek İlaçlama</h3>
+                                <p>Örümcek ve ağlarından kurtulma çözümleri</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Örümcek İlaçlama</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Örümcek Yuvaları Temizliği</li>
+                                    <li><i class="fas fa-check"></i> Ağlarından Kurtulma</li>
+                                    <li><i class="fas fa-check"></i> Zehirli Türlere Karşı Koruma</li>
+                                    <li><i class="fas fa-check"></i> Bahçe ve Ev İçi Çözümler</li>
+                                    <li><i class="fas fa-check"></i> Uzun Süreli Koruma</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="orumcek-ilaclama.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fare İlaçlama -->
+                <div class="service-card" data-product="fare">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-paw"></i>
+                                </div>
+                                <h3>Fare İlaçlama</h3>
+                                <p>Fare, sıçan ve diğer kemirgenlerle mücadele</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Fare İlaçlama</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Fare & Sıçan İlaçlama</li>
+                                    <li><i class="fas fa-check"></i> Yuvaların Tespiti</li>
+                                    <li><i class="fas fa-check"></i> Kemirgen Kontrolü</li>
+                                    <li><i class="fas fa-check"></i> Hastalık Riski Önleme</li>
+                                    <li><i class="fas fa-check"></i> Mekan Koruma Sistemleri</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="fare-ilaclama.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sezonluk İlaçlama -->
+                <div class="service-card" data-product="sezonluk">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3>Sezonluk İlaçlama</h3>
+                                <p>Düzenli bakım ve koruma programları</p>
+                            </div>
+                            <div class="flip-indicator">
+                                <i class="fas fa-sync-alt"></i> Detaylar
+                            </div>
+                        </div>
+                        <div class="service-card-back">
+                            <h3>Sezonluk İlaçlama</h3>
+                            <div class="product-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Düzenli Bakım Programı</li>
+                                    <li><i class="fas fa-check"></i> Mevsimsel Koruma</li>
+                                    <li><i class="fas fa-check"></i> Otel & Restaurant Paketleri</li>
+                                    <li><i class="fas fa-check"></i> Site & Bahçe Bakımı</li>
+                                    <li><i class="fas fa-check"></i> Özel Fiyatlandırma</li>
+                                </ul>
+                            </div>
+                            <div class="all-products-text">Detaylı Bilgi Alın</div>
+                            <a href="sezonluk-ilaclama.html" class="btn">Hizmet Detayları</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Hakkımızda Bölümü -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <p>HAKKIMIZDA</p>
+                <h2 class="red-title">Fethiye'nin Güvenilir İlaçlama Firması</h2>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dikkat İlaçlama Hakkında">
+                    <div class="about-badge">
+                        <span>7/24</span>
+                        <span>Acil Servis</span>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="green-title">DİKKAT İLAÇLAMA ile haşerelerden kalıcı olarak kurtulun!</h3>
+                    <p><strong>DİKKAT İLAÇLAMA</strong>, Fethiye ve çevresinde profesyonel böcek ilaçlama, haşere kontrolü ve dezenfeksiyon hizmetleri sunan güvenilir bir firmadır. Sağlık Bakanlığı onaylı ilaçlar ve ekipmanlarla, alanında uzman personelimizle hizmet vermekteyiz.</p>
+                    
+                    <p>Ev, iş yeri, otel, restaurant, site, bahçe gibi tüm yaşam ve çalışma alanlarınızda haşere problemlerine karşı etkili ve kalıcı çözümler sunuyoruz. Müşteri memnuniyetini ön planda tutarak, en kısa sürede en etkili çözümleri üretiyoruz.</p>
+                    
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Sağlık Bakanlığı Onaylı İlaçlar</li>
+                        <li><i class="fas fa-check"></i> Uzman Ekip & Modern Ekipmanlar</li>
+                        <li><i class="fas fa-check"></i> 7/24 Acil İlaçlama Hizmeti</li>
+                        <li><i class="fas fa-check"></i> Garantili İlaçlama Hizmeti</li>
+                        <li><i class="fas fa-check"></i> Çevre ve İnsan Sağlığına Duyarlı Çözümler</li>
+                    </ul>
+                    
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="tel:05425485842" class="btn btn-red">
+                            <i class="fas fa-phone"></i> Hemen Ara
+                        </a>
+                        <a href="https://wa.me/905425485842" target="_blank" class="btn" style="background-color: #25D366;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sıkça Sorulan Sorular Bölümü -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <p>SSS</p>
+                <h2 class="green-title">Sıkça Sorulan Sorular</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>İlaçlama sonrası eve ne zaman girebilirim?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>İlaçlama sonrası genellikle 2-4 saat arası beklemeniz yeterlidir. Bu süre kullanılan ilacın türüne ve uygulama yöntemine göre değişiklik gösterebilir. Uzman ekibimiz size kesin bilgiyi verecektir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Kullandığınız ilaçlar güvenli midir?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tüm ilaçlarımız Sağlık Bakanlığı onaylıdır. İnsan sağlığına ve çevreye zararı olmayan, haşerelere özel formüle edilmiş ilaçlar kullanıyoruz. Evcil hayvanlarınız için de güvenlidir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>İlaçlama öncesi ne gibi hazırlıklar yapmalıyım?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mutfak dolaplarını boşaltın, gıda malzemelerini kapatın, evcil hayvanlarınızı uzaklaştırın ve mümkünse yatak örtülerini kaldırın. Detaylı hazırlık listesi için ekibimiz sizi bilgilendirecektir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Garanti kapsamı nedir?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yaptığımız tüm ilaçlama hizmetleri için garanti veriyoruz. Garanti süresi haşere türüne ve uygulama alanına göre değişmekle birlikte genellikle 6 ay ile 2 yıl arasındadır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Fiyatlandırma nasıl yapılıyor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Fiyatlandırma; ilaçlanacak alanın metrekaresi, haşere türü, uygulama zorluğu ve tekrarlama gerekliliğine göre belirlenir. Ücretsiz keşif hizmetimizle en doğru fiyat teklifini sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- İletişim Önizleme -->
+    <section class="about" style="background-color: #f8f9fa; width: 100%;">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h3 class="red-title">Bize Ulaşın</h3>
+                    <p>DİKKAT İLAÇLAMA olarak, Fethiye ve çevresindeki tüm haşere problemlerinize çözüm üretmek için buradayız. Ücretsiz keşif ve danışmanlık hizmetimizden yararlanın.</p>
+                    
+                    <ul class="features-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Muğla Fethiye Karaçulha Mahallesi Atatürk Bulvarı 127/A</li>
+                        <li><i class="fas fa-phone"></i> 0542 548 58 42</li>
+                        <li><i class="fas fa-envelope"></i> dikkatilaclama488@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i> @dikkatilaclama.48</li>
+                        <li><i class="fas fa-clock"></i> 7/24 Acil İlaçlama Hizmeti</li>
+                    </ul>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
+                        <a href="tel:05425485842" class="btn btn-red">
+                            <i class="fas fa-phone"></i> Hemen Ara
+                        </a>
+                        <a href="https://wa.me/905425485842" target="_blank" class="btn" style="background-color: #25D366;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/dikkatilaclama.48" target="_blank" class="btn" style="background-color: #E4405F;">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="İletişim">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="width: 100%;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-logo">
+                    <h3>DİKKAT <span>İLAÇLAMA</span></h3>
+                    <p>Fethiye'nin profesyonel haşere kontrol uzmanı. Sağlık Bakanlığı onaylı ilaçlar ve uzman ekip ile hizmetinizdeyiz.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/dikkatilaclama.48" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/905425485842" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:05425485842" class="social-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Kurumsal</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Hizmetlerimiz</h4>
+                    <ul class="footer-links">
+                        <li><a href="yuruyen-hasereler.html">Yürüyen Haşereler</a></li>
+                        <li><a href="ucan-hasereler.html">Uçan Haşereler</a></li>
+                        <li><a href="tahta-kurusu.html">Tahta Kurusu</a></li>
+                        <li><a href="fare-ilaclama.html">Fare İlaçlama</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>Muğla Fethiye Karaçulha Mahallesi Atatürk Bulvarı 127/A</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>0542 548 58 42</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>dikkatilaclama488@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>2024 © Tüm Hakları Saklıdır - DİKKAT İLAÇLAMA | Fethiye Böcek İlaçlama Hizmetleri</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Sabit Butonlar -->
+    <div class="fixed-buttons">
+        <a href="https://wa.me/905425485842" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05425485842" class="call-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    
+    <script>
+        // Slider Fonksiyonları
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+        let slideInterval;
+        
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 3000);
+        }
+        
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+        
+        startSlider();
+        
+        // Kart döndürme fonksiyonelliği - GÜNCELLENDİ
+        document.querySelectorAll('.flip-indicator').forEach(indicator => {
+            indicator.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const card = this.closest('.service-card');
+                
+                if (card) {
+                    // Kartı döndür
+                    card.classList.toggle('flipped');
+                    
+                    // Sadece bir kartın dönmesini sağla
+                    document.querySelectorAll('.service-card').forEach(otherCard => {
+                        if (otherCard !== card && otherCard.classList.contains('flipped')) {
+                            otherCard.classList.remove('flipped');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Kartın ön yüzüne tıklayınca da döndürme (isteğe bağlı)
+        document.querySelectorAll('.service-card-front').forEach(cardFront => {
+            cardFront.addEventListener('click', function(e) {
+                // Eğer tıklanan flip-indicator değilse
+                if (!e.target.closest('.flip-indicator')) {
+                    const card = this.closest('.service-card');
+                    
+                    if (card) {
+                        // Kartı döndür
+                        card.classList.toggle('flipped');
+                        
+                        // Sadece bir kartın dönmesini sağla
+                        document.querySelectorAll('.service-card').forEach(otherCard => {
+                            if (otherCard !== card && otherCard.classList.contains('flipped')) {
+                                otherCard.classList.remove('flipped');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Kartın arka yüzündeki boş alana tıklayınca döndürme
+        document.querySelectorAll('.service-card-back').forEach(cardBack => {
+            cardBack.addEventListener('click', function(e) {
+                // Eğer tıklanan buton değilse
+                if (!e.target.closest('.btn') && !e.target.classList.contains('btn')) {
+                    const card = this.closest('.service-card');
+                    
+                    if (card) {
+                        // Kartı döndür
+                        card.classList.toggle('flipped');
+                        
+                        // Sadece bir kartın dönmesini sağla
+                        document.querySelectorAll('.service-card').forEach(otherCard => {
+                            if (otherCard !== card && otherCard.classList.contains('flipped')) {
+                                otherCard.classList.remove('flipped');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Mobil Menü Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        function toggleMobileMenu() {
+            const isActive = mainNav.classList.contains('active');
+            mainNav.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            
+            if (isActive) {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            } else {
+                mobileMenuBtn.querySelector('i').classList.remove('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.add('fa-times');
+            }
+        }
+        
+        function closeMobileMenu() {
+            mainNav.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Dropdown Menü için Mobil Uyumluluk
+        const servicesDropdown = document.getElementById('servicesDropdown');
+        
+        servicesDropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.toggle('active');
+            }
+        });
+        
+        // Menü Linklerine Tıklandığında Mobil Menüyü Kapat
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    if (!this.parentElement.classList.contains('dropdown') || 
+                        this.nextElementSibling === null) {
+                        closeMobileMenu();
+                    }
+                }
+            });
+        });
+        
+        // FAQ (Sıkça Sorulan Sorular) Fonksiyonalliği
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                });
+                
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    this.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+        
+        // Sayfa yüklendiğinde kart arkasındaki tüm butonların doğrudan çalışmasını sağla
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tüm kart butonlarına doğrudan tıklama olayı ekle
+            document.querySelectorAll('.service-card-back .btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href && href !== '#') {
+                        // Normal link davranışı olsun
+                        console.log('Buton tıklandı, yönlendiriliyor:', href);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
